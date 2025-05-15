@@ -128,9 +128,11 @@ footer {
 }
   
 .ligne {
+    position: absolute;
+    left: 0;
+    width: 100vw;
     height: 1px;
     background: white;
-    width: 100%;
     margin-bottom: 50px;
 }
   
@@ -142,7 +144,11 @@ footer {
     padding: 0 2rem;
     flex-wrap: wrap;
 }
-  
+
+.coordonnees{
+    margin-top: 3.5rem;
+}
+
 .coordonnees, .menu-bas, .footer-infos {
     display: flex;
     flex-direction: column;
@@ -241,6 +247,10 @@ footer {
   .menu-bas{
     text-align: center;
   }
+
+  .menu-bas, .footer-infos {
+    margin-top: 3.5rem;
+  }
 }
 
 /* ORDINATEURS */
@@ -296,6 +306,10 @@ footer {
 
   .menu-bas{
     text-align: center;
+  }
+
+  .menu-bas, .footer-infos {
+    margin-top: 3.5rem;
   }
 }
 
