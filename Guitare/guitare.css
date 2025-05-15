@@ -158,10 +158,12 @@ footer {
 }
 
 .ligne {
-  height: 1px;
-  background: white;
-  width: 100%;
-  margin-bottom: 50px;
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    height: 1px;
+    background: white;
+    margin-bottom: 50px;
 }
 
 .footer-contenu {
@@ -174,6 +176,9 @@ footer {
   flex-wrap: wrap;
 }
 
+.coordonnees{
+    margin-top: 3.5rem;
+}
 .coordonnees, .menu-bas, .footer-infos {
   display: flex;
   flex-direction: column;
@@ -326,6 +331,10 @@ footer {
     text-align: center;
   }
 
+  .menu-bas, .footer-infos {
+    margin-top: 3.5rem;
+  }
+
   .phrase{
     width: 60%;
   }
@@ -407,6 +416,10 @@ footer {
 
   .menu-bas{
     text-align: center;
+  }
+
+  .menu-bas, .footer-infos {
+    margin-top: 3.5rem;
   }
 }
 
