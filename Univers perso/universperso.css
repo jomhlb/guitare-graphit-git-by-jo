@@ -1,0 +1,441 @@
+/* BODY */
+body {
+  margin: auto;
+  padding: 0;
+  font-family: "Lora", serif;
+  color: white;
+  background-image: url(./Images/background.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 90%;
+  height: 100%;
+  overflow-x: hidden;
+  animation: slideIn 1s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* HEADER */
+header {
+  width: 90%;
+  position: static;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  background: transparent;
+}
+
+/* TITRE PRINCIPAL */
+h1 {
+  font-size: 1.8rem;
+  text-align: center;
+  color: white;
+  z-index: 1;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+/* MENUS */
+.burger {
+  font-size: 1.3rem;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  z-index: 200;
+}
+
+.menu-mobile {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 3.75rem;
+  right: 0;
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 1rem;
+  z-index: 100;
+  text-align: center;
+  border-left: 2px solid white;
+}
+
+.menu-mobile.show {
+  display: flex !important;
+  flex-direction: column;
+}
+
+.menu-mobile a {
+  padding: 0.25rem;
+  font-size: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  text-decoration: none;
+}
+
+.menu-desktop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 3.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1rem;
+  z-index: 100;
+}
+
+.menu-desktop a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 0.625rem 1rem;
+  transition: background 0.3s;
+}
+
+/* MAIN */
+main.container {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 2rem 1rem;
+  width: 100%;
+}
+
+/* TITRE SECONDAIRE*/
+.intro h2 {
+  font-size: 1.4rem;
+  margin: 0 auto 1rem;
+  background: url(Images/devbackground.JPG) no-repeat center/cover;
+  border-radius: 1rem;
+  padding: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  max-width: 45rem;
+}
+
+.intro p {
+  font-size: 0.9rem;
+  margin: 0 auto 2rem;
+  max-width: 43.75rem;
+}
+
+/* SECTION CARTE */
+.section-carte {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.carte {
+  background: url(Images/fond.JPG) no-repeat center/cover;
+  width: 90%;
+  max-width: 17.5rem;
+  padding: 0.8rem;
+  border-radius: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card {
+  background: transparent;
+  color: white;
+}
+
+.carte:hover {
+  transform: scale(1.05);
+}
+
+.carte h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.carte p {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.carte a {
+  text-decoration: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid white;
+  font-weight: bold;
+}
+
+/* CONCLUSION */
+.conclusion {
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  padding-top: 5rem;
+  margin: 1rem 0;
+  opacity: 0.7;
+}
+
+.ligne {
+  height: 1px;
+  background: white;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.footer-contenu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 2rem;
+  margin-left: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.coordonnees, .menu-bas, .footer-infos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.8rem;
+  max-width: 100%;
+}
+
+.footer-infos {
+  text-align: center;
+}
+
+.menu-bas nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.menu-bas nav a {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+}
+
+.adresse-ligne, .tiktok-ligne, .youtube-ligne {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.youtube-ligne a, .tiktok-ligne a{
+  text-decoration: none !important;
+  color: white;
+  
+}
+
+.maj {
+  font-style: italic;
+  font-size: 0.7rem;
+}
+
+/* --------- MEDIA QUERIES --------- */
+/* TRES PETITS ÉCRANS */
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 1.4rem !important;
+  }
+
+  .intro h2 {
+    font-size: 1.2rem !important;
+  }
+
+  .carte h3 {
+    font-size: 1.1rem !important;
+  }
+
+  .menu-mobile a {
+    padding: 0.25rem;
+    font-size: 0.9rem;
+  }
+
+  .ligne{
+    width: 94%;
+    margin-left: 10px;
+  }
+}
+
+/* TABLETTES */
+@media (min-width: 768px) and (max-width: 1024px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .intro h2{
+    font-size: 1.6rem;
+    width: 90%;
+  }
+
+  .carte h3{
+    font-size: 1.3rem;
+  }
+
+  .intro p{
+    font-size: 0.9rem;
+    width: 90%;
+  }
+
+  .carte p{
+    font-size: 0.9rem;
+  }
+
+  .conclusion{
+    font-size: 0.9rem;
+  }
+
+  .burger {
+    display: block !important;
+    font-size: 1.8rem;
+    margin-top: 0.5rem;
+  }
+
+  .menu-desktop {
+    display: none !important;
+  }
+
+  .menu-mobile {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 3.75rem;
+    right: 0;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 1rem;
+    z-index: 100;
+    text-align: center;
+    border-left: 2px solid white;
+  }
+
+  .menu-mobile.show {
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  .menu-mobile a {
+    padding: 1rem;
+    font-size: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+  }
+
+  .footer-contenu{
+    margin-left: 1rem;
+  }
+
+  .menu-bas{
+    text-align: center;
+  }
+
+  .maj{
+    width: 18rem;
+  }
+}
+
+/* ORDINATEURS */
+@media (min-width: 1025px){
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .intro h2{
+    font-size: 2rem;
+  }
+
+  .carte h3{
+    font-size: 1.5rem;
+  }
+
+  .intro p{
+    font-size: 1rem;
+    width: 90%;
+  }
+
+  .menu-desktop a {
+    font-size: 0.9rem;
+    margin-top: 20px;
+  }
+  
+  .carte p, .conclusion{
+    font-size: 1rem;
+  }
+
+  .footer-contenu{
+    font-size: 1rem;
+  }
+
+  .menu-bas{
+    text-align: center;
+  }
+}
+
+/* GRANDS ECRANS */
+@media (min-width: 1440px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .intro h2 {
+    font-size: 2.1rem;
+  }
+
+  .carte h3 {
+    font-size: 1.8rem;
+  }
+
+  .intro p {
+    font-size: 1.1rem;
+    width: 85%;
+  }
+
+  .menu-desktop a {
+    font-size: 1.1rem;
+  }
+
+  .carte p,
+  .conclusion {
+    font-size: 1.1rem;
+  }
+
+  .footer-contenu {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .carte p,
+  .conclusion, .intro p{
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 2560px) {
+  main {
+    flex: 1;
+  }
+}

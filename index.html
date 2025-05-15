@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="./Accueil/accueil.css">
+        <script src="./Accueil/accueil.js"></script>
+        <title>Guitare, Graphite & Git by Jo</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header class="text-white py-3">
+            <!-- Menu version mobile -->
+            <div class="d-flex justify-content-between">
+                <div class="burger" id="burger">☰</div>
+                <nav class="menu-mobile" id="menuMobile" style="display: none;">
+                    <a href="./Univers pro/universpro.html">Mon univers pro</a>
+                    <a href="./Univers perso/universperso.html">Mon univers perso</a>
+                </nav>
+            </div>
+            
+            <!-- Titre et sous-titre -->
+            <div class="text-center">
+                <h1 class="display-4">Guitare, Graphite & Git</h1>
+                <p class="signature">by Jo</p>
+            </div>
+
+            <!-- Menus version bureau -->
+            <nav class="menu-desktop d-md-flex justify-content-between">
+                <ul class="nav">
+                    <li><a href="./Univers pro/universpro.html" class="nav-link text-white">Mon univers pro</a></li>
+                </ul>
+                <ul class="nav">
+                    <li><a href="./Univers perso/universperso.html" class="nav-link text-white">Mon univers perso</a></li>
+                </ul>
+            </nav>
+  </nav>
+
+        </header>
+
+        <main class="container py-5">
+            <div class="row text-center">
+                <div class="col-12 col-md-4 mb-4">
+                    <p id="texte-court">En reconversion professionnelle pour devenir développeuse web</p>
+                    <img src="Images/dev.jpg" alt="Photo" class="img-fluid rounded-3 dev-image">
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <p id="texte-court2">Guitariste à mes heures perdues</p>
+                    <img src="Images/guitare2.jpg" alt="Photo" class="img-fluid rounded-3 guitare-image">
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <p id="texte-court3">Créative par moment</p>
+                    <img src="Images/dessin.jpg" alt="Photo" class="img-fluid rounded-3 dessin-image">
+                </div>
+            </div>
+        </main>
+
+        <footer class="text-white py-3">
+            <div class="text-center">
+                <p class="maj">Naviguez entre mon monde professionnel et mes projets personnels</p>
+            </div>
+        </footer>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

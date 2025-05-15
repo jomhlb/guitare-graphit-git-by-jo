@@ -1,0 +1,424 @@
+/* BODY */
+  body {
+    padding: 0;
+    font-family: "Lora", serif;
+    color: white;
+    background-image: url(./Images/background.jpg);
+    background-size: cover;
+    background-position: center center; /* L'image est centrée */
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 5rem;
+    max-width: 100vw;
+    box-sizing: border-box;
+    height: 100%;
+    overflow-x: hidden !important;
+    animation: slideIn 1s ease-out forwards;
+    opacity: 0;
+  }
+
+@keyframes slideIn {
+    to {
+      opacity: 1;
+  }
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem;
+    background: transparent;
+}
+
+/* MENUS */
+nav.menu-desktop{
+    display: none;
+}
+
+.burger {
+    font-size: 1.3rem;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    z-index: 200;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.menu-mobile {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 3.75rem;
+    right: 0;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 1rem;
+    z-index: 100;
+    text-align: center;
+    border-left: 2px solid white;
+}
+
+.menu-mobile.show {
+    display: flex !important;
+    flex-direction: column;
+}
+
+.menu-mobile a {
+    padding: 0.25rem;
+    font-size: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    text-decoration: none;
+}
+
+.menu-mobile, nav.menu-desktop {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+/* TITRE PRINCIPAL */
+h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    color: white;
+    z-index: 1;
+    margin-top: 0.01rem;
+    font-weight: bold;
+}
+
+.sous-titre p{
+    font-size: 0.9rem;
+    margin-bottom: 50px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.sous-titre{
+    transform: none;
+    opacity: 0;
+    animation: slideIn 1s ease-out forwards;
+    will-change: opacity;
+    overflow-x: hidden !important;
+}
+  
+@keyframes slideIn {
+    from {
+        opacity: 0;
+  }
+    to {
+        opacity: 1;
+  }
+}
+
+/* TITRES SECONDAIRES */
+.titre-secondaire {
+    font-size: 1.4rem;
+    text-align: center;
+    background-image: url(./Images/devbackground.JPG);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    padding: 0.6rem;
+    color: white;
+}
+
+/* FORMULAIRE DE CONTACT */
+main.container{
+    width: 90%;
+}
+
+form {
+    padding: 1rem;
+  }
+
+label {
+    font-weight: bold;
+    margin-bottom: 1px;
+}
+
+button, select, input {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+button{
+    margin-top: 10px;
+}
+
+button[type="submit"] {
+    background-color: #444;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #666;
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  padding-top: 5rem;
+  margin: 1rem 0;
+  opacity: 0.7;
+}
+
+.ligne {
+  height: 1px;
+  background: white;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.footer-contenu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;  /* Espacement entre les blocs */
+  align-items: flex-start;
+  padding: 0 2rem;
+  margin-left: 0.5rem;
+  flex-wrap: wrap;  /* Permet aux éléments de passer à la ligne sur petits écrans */
+}
+
+.coordonnees, .menu-bas, .footer-infos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;  /* Espacement à l'intérieur des blocs */
+  font-size: 0.8rem;
+  max-width: 100%;  /* Permet de s'assurer que chaque bloc occupe 33% ou moins */
+}
+
+.footer-infos {
+  text-align: center;
+}
+
+.menu-bas nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* Ajuste la valeur si tu veux plus ou moins d'espace */
+}
+
+.menu-bas nav a {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+}
+
+.adresse-ligne, .tiktok-ligne, .youtube-ligne {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.youtube-ligne a, .tiktok-ligne a{
+  text-decoration: none !important;
+  color: white;
+  
+}
+
+.maj {
+  font-style: italic;
+  font-size: 0.7rem;
+}
+
+/* --------- MEDIA QUERIES --------- */
+/* TRES PETITS ÉCRANS */
+@media screen and (max-width: 400px) {
+    h1 {
+      font-size: 1.4rem !important;
+    }
+  
+    .titre-secondaire {
+      font-size: 1.2rem !important;
+    }
+  
+    .menu-mobile a {
+      padding: 0.25rem;
+      font-size: 0.9rem;
+    }
+  }
+
+  /* TABLETTES */
+@media (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .titre-secondaire{
+      font-size: 1.6rem;
+    }
+  
+    .sous-titre p{
+      font-size: 0.9rem;
+    }
+  
+    .burger {
+      display: block !important;
+      font-size: 1.8rem;
+      margin-top: 0.5rem;
+    }
+  
+    nav.menu-desktop {
+      display: none !important;
+    }
+  
+    .menu-mobile {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 3.75rem;
+      right: 0;
+      width: 80%;
+      background-color: rgba(0, 0, 0, 0.9);
+      padding: 1rem;
+      z-index: 100;
+      text-align: center;
+      border-left: 2px solid white;
+    }
+  
+    .menu-mobile.show {
+      display: flex !important;
+      flex-direction: column;
+    }
+  
+    .menu-mobile a {
+      padding: 1rem;
+      font-size: 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      text-decoration: none;
+    }
+
+    main.container{
+        width: 70%;
+    }
+
+    .footer-contenu{
+    margin-left: 1rem;
+    }
+
+    .menu-bas{
+    text-align: center;
+   }
+
+    .phrase{
+    width: 60%;
+   }
+
+    .ligne{
+    width: 95%;
+    margin-left: 1rem;
+   }
+  }
+  
+  /* ORDINATEURS */
+  @media (min-width: 1025px){
+    h1 {
+      font-size: 2.5rem;
+    }
+  
+    .titre-secondaire{
+      font-size: 2rem;
+    }
+  
+    .sous-titre p{
+      font-size: 1rem;
+    }
+
+    nav.menu-desktop {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 3.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 1rem;
+      z-index: 100;
+    }
+    
+    nav.menu-desktop a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      padding: 0.625rem 1rem;
+      transition: background 0.3s;
+    }
+  
+    nav.menu-desktop a {
+      font-size: 0.9rem;
+      margin-top: 20px;
+    }
+  
+    .footer-contenu{
+      font-size: 1rem;
+    }
+
+    .menu-bas{
+      text-align: center;
+    }
+  }
+  
+  /* GRANDS ECRANS */
+  @media (min-width: 1440px) {
+    h1 {
+      font-size: 3rem;
+    }
+  
+    .titre-secondaire {
+      font-size: 2.2rem;
+    }
+  
+    .sous-titre p {
+      font-size: 1.1rem;
+    }
+  
+    nav.menu-desktop a {
+      font-size: 1.1rem;
+    }
+  
+    .footer-contenu {
+      font-size: 1.1rem;
+    }
+
+    .menu-bas{
+      text-align: center;
+    }
+  }
+  
+  @media (min-width: 1920px) {
+    .carte p,
+    .conclusion, .intro p{
+      font-size: 1.1rem;
+    }
+
+    .menu-bas{
+      text-align: center;
+    }
+  }
+  
+  @media (min-width: 2560px) {
+    main {
+      flex: 1;
+    }
+
+    .menu-bas{
+      text-align: center;
+    }
+  }
