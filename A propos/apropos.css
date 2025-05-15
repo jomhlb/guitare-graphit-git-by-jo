@@ -142,26 +142,32 @@ nav.menu-desktop{
 
 /* FOOTER */
 footer {
-    width: 100%;
+    width: 100% !important;
     padding-top: 5rem;
     margin: 1rem 0;
     opacity: 0.7;
 }
 
 .ligne {
+    position: absolute;
+    left: 0;
+    width: 100vw;
     height: 1px;
     background: white;
-    width: 100%;
     margin-bottom: 50px;
 }
 
 .footer-contenu {
-    width: 100%;
+    width: 100% !important;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     padding: 0 2rem;
     flex-wrap: wrap; 
+}
+
+.coordonnees{
+    margin-top: 3.5rem;
 }
 
 .coordonnees, .menu-bas, .footer-infos {
@@ -180,7 +186,7 @@ footer {
 .menu-bas nav {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem; /* Ajuste la valeur si tu veux plus ou moins d'espace */
+    gap: 0.5rem;
 }
 
 .menu-bas nav a {
@@ -307,8 +313,12 @@ footer {
       transform: translateX(-35px);
   }
 
+  .menu-bas, .footer-infos {
+    margin-top: 3.5rem;
+  }
+
   .menu-bas{
-      text-align: center;
+    text-align: center;
   }
 }
 
@@ -394,6 +404,14 @@ footer {
       transform: translateX(-35px);
   }
 
+  .menu-bas, .footer-infos {
+    margin-top: 3.5rem;
+  }
+
+  .menu-bas{
+    text-align: center;
+  }
+
   .menu-bas{
       text-align: center;
   }
@@ -436,6 +454,11 @@ footer {
   .menu-bas{
       text-align: center;
   }
+
+  .menu-bas, .footer-infos {
+    margin-top: 3.5rem;
+  }
+
 }
 
 @media (min-width: 1920px){
