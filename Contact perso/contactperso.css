@@ -5,7 +5,7 @@
     color: white;
     background-image: url(./Images/background.jpg);
     background-size: cover;
-    background-position: center center; /* L'image est centrée */
+    background-position: center center;
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
@@ -179,29 +179,35 @@ footer {
 }
 
 .ligne {
-  height: 1px;
-  background: white;
-  width: 100%;
-  margin-bottom: 50px;
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    height: 1px;
+    background: white;
+    margin-bottom: 50px;
 }
 
 .footer-contenu {
   width: 100%;
   display: flex;
-  justify-content: space-between;  /* Espacement entre les blocs */
+  justify-content: space-between;
   align-items: flex-start;
   padding: 0 2rem;
   margin-left: 0.5rem;
-  flex-wrap: wrap;  /* Permet aux éléments de passer à la ligne sur petits écrans */
+  flex-wrap: wrap; 
+}
+
+.coordonnees{
+    margin-top: 3.5rem;
 }
 
 .coordonnees, .menu-bas, .footer-infos {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;  /* Espacement à l'intérieur des blocs */
+  gap: 1rem;
   font-size: 0.8rem;
-  max-width: 100%;  /* Permet de s'assurer que chaque bloc occupe 33% ou moins */
+  max-width: 100%;
 }
 
 .footer-infos {
@@ -211,7 +217,7 @@ footer {
 .menu-bas nav {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem; /* Ajuste la valeur si tu veux plus ou moins d'espace */
+  gap: 0.5rem; 
 }
 
 .menu-bas nav a {
@@ -250,13 +256,6 @@ footer {
     .menu-mobile a {
       padding: 0.25rem;
       font-size: 0.9rem;
-    }
-  }
-
-@media screen and (max-width: 700px) {
-    .ligne{
-      width: 85%;
-      margin-left: 25px;
     }
   }
 
@@ -315,20 +314,18 @@ footer {
     }
 
     .footer-contenu{
-    margin-left: 1rem;
+        margin-left: 1rem;
     }
 
+    .menu-bas, .footer-infos {
+        margin-top: 3.5rem;
+  }
     .menu-bas{
-    text-align: center;
+        text-align: center;
    }
 
-    .phrase{
-    width: 60%;
-   }
-
-    .ligne{
-    width: 95%;
-    margin-left: 1rem;
+  .phrase{
+        width: 60%;
    }
   }
   
@@ -373,6 +370,10 @@ footer {
   
     .footer-contenu{
       font-size: 1rem;
+    }
+
+    .menu-bas, .footer-infos {
+      margin-top: 3.5rem;
     }
 
     .menu-bas{
