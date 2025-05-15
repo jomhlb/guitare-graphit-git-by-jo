@@ -240,11 +240,6 @@ footer {
     .photo{
       height: 150px !important;
     }
-
-    .ligne{
-      width: 85%;
-      margin-left: 20px;
-    }
 }
 
 @media (min-width: 425px) {
@@ -333,11 +328,6 @@ footer {
 
   .phrase{
     width: 60%;
-  }
-
-  .ligne{
-    width: 95%;
-    margin-left: 1rem;
   }
 }
 
