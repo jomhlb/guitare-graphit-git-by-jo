@@ -200,10 +200,12 @@ footer {
 }
 
 .ligne {
-  height: 1px;
-  background: white;
-  width: 100%;
-  margin-bottom: 50px;
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    height: 1px;
+    background: white;
+    margin-bottom: 50px;
 }
 
 .footer-contenu {
@@ -216,6 +218,9 @@ footer {
   flex-wrap: wrap;
 }
 
+.coordonnees{
+    margin-top: 3.5rem;
+}
 .coordonnees, .menu-bas, .footer-infos {
   display: flex;
   flex-direction: column;
@@ -271,11 +276,6 @@ footer {
     .menu-mobile a {
       padding: 0.25rem;
       font-size: 0.9rem;
-    }
-
-    .ligne{
-      width: 85%;
-      margin-left: 20px;
     }
 
     .photo{
@@ -365,13 +365,12 @@ footer {
       text-align: center;
     }
 
-    .phrase{
-      width: 60%;
+    .menu-bas, .footer-infos {
+      margin-top: 3.5rem;
     }
 
-    .ligne{
-      width: 95%;
-      margin-left: 1rem;
+    .phrase{
+      width: 60%;
     }
 }
 
@@ -443,6 +442,10 @@ footer {
 
   .description, .description2, .description3, .description4, .description5, .description6 {
     max-width: 90%;
+  }
+
+  .menu-bas, .footer-infos {
+    margin-top: 3.5rem;
   }
 
   .carte p{
