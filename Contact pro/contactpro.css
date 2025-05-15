@@ -225,7 +225,12 @@ footer {
     align-items: center;
     gap: 0.5rem;
 }
-  
+ 
+.telephone-ligne a {
+    text-decoration: none !important;
+    color: white;
+}
+
 .linkedin-ligne a {
     text-decoration: none !important;
 }
