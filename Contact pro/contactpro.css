@@ -179,9 +179,11 @@ footer {
 }
   
 .ligne {
+    position: absolute;
+    left: 0;
+    width: 100vw;
     height: 1px;
     background: white;
-    width: 100%;
     margin-bottom: 50px;
 }
   
@@ -202,6 +204,10 @@ footer {
     gap: 1rem;
     font-size: 0.8rem;
     max-width: 100%;
+}
+
+.coordonnees{
+    margin-top: 3.5rem;
 }
   
 .footer-infos {
@@ -326,6 +332,10 @@ html, body {
       transform: translateX(-35px);
     }
 
+    .menu-bas, .footer-infos {
+       margin-top: 3.5rem;
+    }
+
     .menu-bas{
       text-align: center;
     }
@@ -382,6 +392,10 @@ html, body {
       transform: translateX(-35px);
     }
 
+    .menu-bas, .footer-infos {
+       margin-top: 3.5rem;
+    }
+    
     .menu-bas{
     text-align: center;
     }
